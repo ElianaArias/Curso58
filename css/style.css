@@ -2,7 +2,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
@@ -63,8 +62,11 @@ body{
     cursor: pointer;
     display: ;
 }
-.h1{
-    margin: 80px 0 0 350px;
+#titulo h1 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+
 }
 @media(max-width:991px) {
     .content{
@@ -101,32 +103,29 @@ body{
     
 .flex-conteiner{
     display: flex;
-    
-    flex-flow: nowrap;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 0%;
     
 }
-.portada{
+.portada img {
     border: 1px solid bisque;
-    width: 300px;
-    height: 300px;
-    margin: 2px;
-
+    width: 100%;
+    height: auto;
 }
+
 #section1{
     display: flex;
+    text-align: justify;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 3%;
+    
 }
 
-#section1 img{
-    
-    flex-wrap: wrap;
-    width: 350px;
-    height: 300px;
-    margin-left: 5%;
-}
 #section1 p{
-    
-    margin-left: 10%;
-    margin-right: 0%;
+    margin-left: 5%;
+   
 }
     
 .titulo{
