@@ -56,7 +56,7 @@ body {
 }
 
 .menu .navbar ul li a:hover {
-    color: #d63d3d;
+    color: #583a27;
 }
 
 #menu {
@@ -72,16 +72,35 @@ body {
     display: ;
 }
 
-#titulo h1 {
+h1{
     margin-top: 5%;
     margin-bottom: 2%;
-    text-align: center;
     padding: 10px 15px 5px 15px;
     font-size: 300%;
+    color: rgba(145,104,87,255);
+    justify-content: center;
+    text-align: center;
+}
+
+h2{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 10px 15px 5px 15px;
+    font-size: 250%;
+    color: rgba(145,104,87,255);
+    font-style: oblique;
+    font-weight: bold;
+}
+
+h3 {
+    font-style: oblique;
+    color: #706b6b;
 }
 
 iframe {
-    padding: 30px 15px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
 #idpie{
     display: flex;
@@ -220,16 +239,30 @@ iframe {
     height: auto;
 }
 
+hr{
+    border: 0.5px solid rgb(243, 243, 229);
+}
 #section1 {
     display: flex;
-    text-align: justify;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 3%;
+}
+
+#section1 img {
+    border-radius: 2%;
+    margin-left: 20%;
+    margin-right: 5%;
 }
 
 #section1 p {
-    margin-left: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 5%;
+    text-align: justify;
+    color: rgb(129, 126, 126);
+    background-color: whitesmoke;
+    border-radius: 2%;
 }
 
 .content-container {
@@ -244,7 +277,7 @@ iframe {
     height: auto;
     margin: 0 auto;
     margin-bottom: 10%;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 .caja1 {
@@ -272,24 +305,54 @@ iframe {
     background-color: #c8937b;
 
 }
-
-h3 {
-    font-style: oblique;
-    color: #706b6b;
+#receta{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%; 
+    color: rgb(129, 128, 128);
+}
+#Panqueques {
+    background-image: url(/images/panqueques.png);
+    background-size: 100%;
+    padding-bottom: 2%;
+}
+#ÑoquisCalabaza {
+    background-image: url(/images/ñoquiscalabaza.png);
+    background-size: 100%;
+    padding-bottom: 2%;
+}
+#ÑoquisEspinaca {
+    background-image: url(/images/ñoquisespinaca.png);
+    background-size: 100%;
+    padding-bottom: 2%;
+}
+#PastaBrocoli {
+    background-image: url(/images/pastasbrocoli.png);
+    background-size: 100%;
+    padding-bottom: 2%;
 }
 
 .ingredientes {
+    padding: 5px;
     display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
     text-align: left;
-    margin-top: 5%;
-    margin-left: 2%;
-    margin-right: 3%;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 25px;
+    margin-right: 10px;
+    border-radius: 5%;
 }
 
-.ingredientes {
+.preparacion {
+    padding: 5px;
     display: flex;
-    text-align: left;
-    margin-top: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
+    flex-direction: row;
+    background-color: whitesmoke;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    margin-right: 25px;
+    border-radius: 3%;
 }

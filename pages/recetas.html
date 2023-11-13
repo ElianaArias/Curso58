@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recetas de Alexa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/images/logo_sinfondo.png" type="image/png">
 
@@ -32,37 +33,12 @@
         </div>
     </header>
     <main>
-
         <section id="titulo">
             <center>
-                <h1 style="color: rgba(145,104,87,255);">Recetas</h1>
+                <h2>Ahora sí, ¡a cocinar!</h2>
             </center>
         </section>
-
-        <section class="flex-container">
-            <div class="portada">
-                <img src="/images/croissant.png" alt="">
-            </div>
-            <div class="portada">
-                <img src="/images/albondigas.png" alt="">
-            </div>
-            <div class="portada">
-                <img src="/images/avocado.png" alt="">
-            </div>
-            <div class="portada">
-                <img src="/images/minestrone.png" alt="">
-            </div>
-            <div class="portada">
-                <img src="/images/ensaladayogurt.png" alt="">
-            </div>
-        </section>
-
-        <section id="titulo">
-            <center>
-                <h1 style="color: rgba(145,104,87,255);">Ahora sí, ¡a cocinar!</h1>
-            </center>
-        </section>
-
+        <hr>
         <section class="content-container">
             <div class="caja1">
                 <div class="subcaja1">
@@ -74,255 +50,349 @@
             <div class="caja1">
                 <div class="subcaja1">
                     <img src="/images/ñoquiscalabaza.png" width="175px" height="175px" alt="ñoquiscalabaza">
-                    <h3>Panqueques</h3>
+                    <h3>Ñoquis de calabaza</h3>
                     <p><a href="#ÑoquisCalabaza">Ver receta</a></p>
                 </div>
             </div>
             <div class="caja1">
                 <div class="subcaja1">
                     <img src="/images/ñoquisespinaca.png" width="175px" height="175px" alt="ñoquisespinaca">
-                    <h3>Panqueques</h3>
+                    <h3>Ñoquis de espinaca</h3>
                     <p><a href="#ÑoquisEspinaca">Ver receta</a></p>
                 </div>
             </div>
             <div class="caja1">
                 <div class="subcaja1">
                     <img src="/images/pastasbrocoli.png" width="175px" height="175px" alt="pastasbrocoli">
-                    <h3>Panqueques</h3>
+                    <h3>Pasta con salsa de brócoli</h3>
                     <p><a href="#PastaBrocoli">Ver receta</a></p>
                 </div>
             </div>
             <div class="caja1">
                 <div class="subcaja1">
                     <img src="/images/sopachoclo.png" width="175px" height="175px" alt="sopachoclo">
-                    <h3>Panqueques</h3>
+                    <h3>Sopa de choclo</h3>
                     <p><a href="#SopaChoclo">Ver receta</a></p>
                 </div>
             </div>
             <div class="caja1">
                 <div class="subcaja1">
                     <img src="/images/tortipizza.png" width="175px" height="175pxs" alt="tortipizza">
-                    <h3>Panqueques</h3>
+                    <h3>Tortipizza</h3>
                     <p><a href="#Tortipizza">Ver receta</a></p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <center>
-                <h2 class="recetas" id="Panqueques">Panqueques gorditos</h2>
-            <br>
-            <div class="ingredientes">
-                <p>INGREDIENTES:</p>
-                <br><br>
-                <ul>
-                    <li>300 ml. de leche</li>
-                    <li>2 huevos</li>
-                    <li>225 gr. de harina leudante</li>
-                    <li>90 gr. de azúcar impalpable</li>
-                    <li>2 cdts. de polvo de hornear</li>
-                    <li>Manteca c/n</li>
-                </ul>
-            </div>
-            <div class="preparacion">
-                <p>PREPARACIÓN:</p>
-                <ul>
-                    <li>Poner los huevos en un bowl junto con la leche y batir. Agregan la harina y el polvo de hornear.
-                        Vuelven a batir. Por último el azúcar y batir una vez más. Que pesada. Pero es la manera que no
-                        queden grumos. ¡Ojo! Si lo prefieren pueden hacerlo con licuadora, poniendo todos los
-                        ingredientes
-                        como si fueramos a hacer un licuado.</li>
-                    <li>Tapan con film y lo dejan reposar una hora en la heladera. Este paso es importante para que
-                        descanse
-                        la masa y así salgan más esponjoso. Pero como esto es Inutilisimas y siempre van a buscar el
-                        camino
-                        más rápido, yo no digo nada, pueden pasarlo por alto, sin antes dejar de sumarle un chorrito de
-                        soda
-                        o agua con gas</li>
-                    <li>Si fueron de los pacientes, después del tiempo de reposo, mezclen un cachito más.</li>
-                    <li>Calentar la sartén o plancha (sin rayitas) donde los vayan a hacer y tanda por medio ponen
-                        manteca
-                        para mantener la superficie engrasada.</li>
-                    <li>Ponen la masa que quieran según el tamaño que busquen.</li>
-                    <li>Dejan cocinar a fuego medio hasta que aparezcan burbujas en la masa y exploten.</li>
-                    <li>Ese es el momento para hacer un movimiento karateka con la espatula y dar vuelta para cocinar 2
-                        minutitos más.</li>
-                    <li>A medida que están listos, los van apilando para que se mantengan calentitos.</li>
-                </ul>
-            </div></center>
-        </section><br><br>
+        <section id="Panqueques">
+            <h2 class="recetas">Panqueques gorditos</h2>
+            <section id="receta">
+                <div class="ingredientes">
+                    <ul>
+                        <li><b>INGREDIENTES</b></li><br>
+                        <li>300 ml. de leche</li><br>
+                        <li>2 huevos</li><br>
+                        <li>225 gr. de harina leudante</li><br>
+                        <li>90 gr. de azúcar impalpable</li><br>
+                        <li>2 cdts. de polvo de hornear</li><br>
+                        <li>Manteca c/n</li>
+                    </ul>
+                </div>
+                <div class="preparacion">
+                    <ul>
+                        <li><b>PREPARACIÓN</b></li><br>
+                        <li>Poner los huevos en un bowl junto con la leche y batir. Agregan la harina y el polvo de
+                            hornear.</li><br>
+                        <li>Vuelven a batir. Por último el azúcar y batir una vez más. Que pesada. Pero es la manera que
+                            no
+                            queden grumos. ¡Ojo! Si lo prefieren pueden hacerlo con licuadora, poniendo todos los
+                            ingredientes
+                            como si fueramos a hacer un licuado.</li><br>
+                        <li>Tapan con film y lo dejan reposar una hora en la heladera. Este paso es importante para que
+                            descanse
+                            la masa y así salgan más esponjoso. Pero como esto es Inutilisimas y siempre van a buscar el
+                            camino
+                            más rápido, yo no digo nada, pueden pasarlo por alto, sin antes dejar de sumarle un chorrito
+                            de
+                            soda
+                            o agua con gas</li><br>
+                        <li>Si fueron de los pacientes, después del tiempo de reposo, mezclen un cachito más.</li><br>
+                        <li>Calentar la sartén o plancha (sin rayitas) donde los vayan a hacer y tanda por medio ponen
+                            manteca
+                            para mantener la superficie engrasada.</li><br>
+                        <li>Ponen la masa que quieran según el tamaño que busquen.</li><br>
+                        <li>Dejan cocinar a fuego medio hasta que aparezcan burbujas en la masa y exploten.</li><br>
+                        <li>Ese es el momento para hacer un movimiento karateka con la espatula y dar vuelta para
+                            cocinar 2
+                            minutitos más.</li><br>
+                        <li>A medida que están listos, los van apilando para que se mantengan calentitos.</li><br>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-        <section>
-            <center>
-                <h2 class="recetas" id="ÑoquisCalabaza">Ñoquis de calabaza rellenos</h2>
-            <br>
-            <p>INGREDIENTES:</p>
-            <ul>
-                <li>500g de puré de calabaza</li>
-                <li>1 huevo</li>
-                <li>300 g de harina</li>
-                <li>80g queso rallado</li>
-                <li>1/2 cdta. de polvo de hornear</li>
-                <li>Sal, pimienta, nuez moscada c/n</li>
-                <li>250g queso cremoso en cubos</li>
-                <li>semolin c/n</li>
-            </ul>
-            <p>PREPARACIÓN:</p>
-            <ul>
-                <li>En un bowl ponen los 500g de puré, 1 huevo, 300 g de harina, ½ cdta de polvo de hornear, 80 g de
-                    queso (yo rallé Parmesano de La Serenísima), sal, pimienta y nuez moscada a gusto y forman una masa.
-                </li>
-                <li>Van a cortar la masa para formar chorizos y cortan de a 2 cm.</li>
-                <li>Agarran un pedacito y aplastan en las palmas con semolín. Acomodan un cubito de queso y forman como
-                    si fuera una empanada. Prestándole mucha atención de cerrarlo bien y que no se vea el queso por
-                    ningún lado. Ahí forman una bolita. Va a quedar del tamaño de una nuez más o menos. Tal vez un poco
-                    menos.</li>
-                <li>Ir acomodándolos en una bandeja sin que se toquen entre sí y espolvoreando con semolín. Mantenerlos
-                    en la heladera, o incluso en el freezer, hasta el momento de hacer.</li>
-                <li>Ponen una olla con abundante agua y sal a hervir.</li>
-                <li>Mientras todo se calienta, hacen la salsa, calentando 300 ml de crema de leche y mezclando con el
-                    puré de 1 cabeza de ajo asado, sal, pimienta y parmesano a gusto. Pisar bien el ajo o mixear.</li>
-                <li>Cuando el agua hierva, ponen los ñoquis. Recién al minuto de ponerlos revuelven con un cucharón de
-                    madera así no se pegan en el fondo y mientras se cocinan, revuelven cada tanto. Cuando estén
-                    flotando si los van a servir directamente, los dejan 1 minuto más. Si los van a gratinar, entonces
-                    los sacan apenas floten.</li>
-                <li>Salsear y terminar con queso rallado.</li>
-            </ul></center>
-        </section><br><br>
+        <section id="ÑoquisCalabaza">
+                <h2 class="recetas">Ñoquis de calabaza rellenos</h2>
+            <section id="receta">
+                <div class="ingredientes">
+                    <ul>
+                        <li><b>INGREDIENTES</b></li><br>
+                        <li>500g de puré de calabaza</li>
+                        <li>1 huevo</li>
+                        <li>300 g de harina</li>
+                        <li>80g queso rallado</li>
+                        <li>1/2 cdta. de polvo de hornear</li>
+                        <li>Sal, pimienta, nuez moscada c/n</li>
+                        <li>250g queso cremoso en cubos</li>
+                        <li>semolin c/n</li>
+                    </ul>
+                </div>
+                <div class="preparacion">
+                    <ul>
+                        <li><b>PREPARACIÓN</b></li><br>
+                        <li>En un bowl ponen los 500g de puré, 1 huevo, 300 g de harina, ½ cdta de polvo de hornear, 80
+                            g de
+                            queso (yo rallé Parmesano de La Serenísima), sal, pimienta y nuez moscada a gusto y forman
+                            una
+                            masa.
+                        </li><br>
+                        <li>Van a cortar la masa para formar chorizos y cortan de a 2 cm.</li><br>
+                        <li>Agarran un pedacito y aplastan en las palmas con semolín. Acomodan un cubito de queso y
+                            forman
+                            como
+                            si fuera una empanada. Prestándole mucha atención de cerrarlo bien y que no se vea el queso
+                            por
+                            ningún lado. Ahí forman una bolita. Va a quedar del tamaño de una nuez más o menos. Tal vez
+                            un
+                            poco
+                            menos.</li><br>
+                        <li>Ir acomodándolos en una bandeja sin que se toquen entre sí y espolvoreando con semolín.
+                            Mantenerlos
+                            en la heladera, o incluso en el freezer, hasta el momento de hacer.</li><br>
+                        <li>Ponen una olla con abundante agua y sal a hervir.</li><br>
+                        <li>Mientras todo se calienta, hacen la salsa, calentando 300 ml de crema de leche y mezclando
+                            con
+                            el
+                            puré de 1 cabeza de ajo asado, sal, pimienta y parmesano a gusto. Pisar bien el ajo o
+                            mixear.
+                        </li><br>
+                        <li>Cuando el agua hierva, ponen los ñoquis. Recién al minuto de ponerlos revuelven con un
+                            cucharón
+                            de
+                            madera así no se pegan en el fondo y mientras se cocinan, revuelven cada tanto. Cuando estén
+                            flotando si los van a servir directamente, los dejan 1 minuto más. Si los van a gratinar,
+                            entonces
+                            los sacan apenas floten.</li><br>
+                        <li>Salsear y terminar con queso rallado.</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-        <section>
+        <section id="ÑoquisEspinaca">
             <center>
-                <h2 class="recetas" id="ÑoquisEspinaca">Ñoquis con salsa de espinaca</h2>
-            <br>
-            <p>INGREDIENTES:</p>
-            <ul>
-                <li>290 gr de queso crema</li>
-                <li>1 yema</li>
-                <li>sal y pimienta c/n</li>
-                <li>1 puñado de queso rallado</li>
-                <li>100g de harina 0000</li>
-                <li>semolin c/n</li>
-                <li>1/4kg de cherys</li>
-                <li>300ml de crema de leche</li>
-                <li>2 o 3 dientes de ajo</li>
-                <li>2 cdas de espinacas cocidas</li>
-            </ul>
-            <p>PREPARACIÓN:</p>
-            <ul>
-                <li>Mezclar 290 gr de Finlandia en un bowl. Trabajarlo solo para suavizarlo un poco y que después no se
-                    hagan grumos.</li>
-                <li>Agregarle 1 cdta de sal, pimienta, 1 puñado de queso rallado y 1 yema.</li>
-                <li>Agregar 100 gr de harina 0000 tamizada.</li>
-                <li>Formar una masa sin necesidad de amasar tanto.</li>
-                <li>Hacer choricitos y cortar. Dejarlos un rato en mesada con mucho semolín mientras hacer la salsa.
-                </li>
-                <li>1/4 kg de cherrys limpios y enteros en fuente con oliva, sal, pimienta y 2 o 3 dientes de ajo. Eso
-                    así va a horno fuerte hasta que tomen un lindo color y se achicharren.</li>
-                <li>Calentar 300 ml de crema de leche. Agregarle 2 cdas de espinacas cocidas y procesadas. Condimentar
-                    con nuez moscada, sal y pimienta.</li>
-                <li>Hervirlos en abundante agua con sal hasta que floten. Momento de sacarlos enseguida.</li>
-                <li>Servir los ñoquis con la crema de espinaca, los tomatitos y queso rallado para terminar.</li>
-            </ul></center>
-        </section><br><br>
+                <h2 class="recetas">Ñoquis con salsa de espinaca</h2>
+            </center>
+            <section id="receta">
+                <div class="ingredientes">
+                    <ul>
+                        <li><b>INGREDIENTES</b></li><br>
+                        <li>290 gr de queso crema</li>
+                        <li>1 yema</li>
+                        <li>sal y pimienta c/n</li>
+                        <li>1 puñado de queso rallado</li>
+                        <li>100g de harina 0000</li>
+                        <li>semolin c/n</li>
+                        <li>1/4kg de cherys</li>
+                        <li>300ml de crema de leche</li>
+                        <li>2 o 3 dientes de ajo</li>
+                        <li>2 cdas de espinacas cocidas</li>
+                    </ul>
+                </div>
+                <div class="preparacion">
+                    <ul>
+                        <li><b>PREPARACIÓN</b></li><br>
+                        <li>Mezclar 290 gr de Finlandia en un bowl. Trabajarlo solo para suavizarlo un poco y que
+                            después no
+                            se
+                            hagan grumos.</li><br>
+                        <li>Agregarle 1 cdta de sal, pimienta, 1 puñado de queso rallado y 1 yema.</li><br>
+                        <li>Agregar 100 gr de harina 0000 tamizada.</li><br>
+                        <li>Formar una masa sin necesidad de amasar tanto.</li><br>
+                        <li>Hacer choricitos y cortar. Dejarlos un rato en mesada con mucho semolín mientras hacer la
+                            salsa.
+                        </li><br>
+                        <li>1/4 kg de cherrys limpios y enteros en fuente con oliva, sal, pimienta y 2 o 3 dientes de
+                            ajo.
+                            Eso
+                            así va a horno fuerte hasta que tomen un lindo color y se achicharren.</li><br>
+                        <li>Calentar 300 ml de crema de leche. Agregarle 2 cdas de espinacas cocidas y procesadas.
+                            Condimentar
+                            con nuez moscada, sal y pimienta.</li><br>
+                        <li>Hervirlos en abundante agua con sal hasta que floten. Momento de sacarlos enseguida.</li>
+                        <br>
+                        <li>Servir los ñoquis con la crema de espinaca, los tomatitos y queso rallado para terminar.
+                        </li><br>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-        <section>
-            <center>
-                <h2 class="recetas" id="PastaBrocoli">Pasta con salsa de brócoli</h2>
-            <br>
-            <p>INGREDIENTES:</p>
-            <ul>
-                <li>250 g de pasta seca corta (tipo penne rigate, tirabuzón, moñito, mostachol)</li>
-                <li>1 brócoli en arbolitos chicos (no tirar los tronquitos, los guardo para hacer sopa. O lo podes usar
-                    para esto pero córtalo buen chiquito)</li>
-                <li>1 diente de ajo (picado finito)</li>
-                <li>aceite de oliva, sal y pimienta c/n</li>
-                <li>50 g de queso crema finlandia sin sellos.</li>
-                <li>50g de almendras</li>
-            </ul>
-            <p>PREPARACIÓN:</p>
-            <ul>
-                <li>Cocinar 250 g de pasta seca corta (tipo penne rigate, tirabuzón, moñito, mostachol) en abundante
-                    agua hirviendo con sal según los minutos que indique el paquete. Yo suelo hervirlos 1 minuto menos
-                    para después terminar cocción mezclando con la salsa.</li>
-                <li>Cortar 1 brócoli en arbolitos chicos (no tirar los tronquitos, los guardo para hacer sopa. O lo
-                    podes usar para esto pero córtalo bien chiquito). Picar finamente 1 diente de ajo</li>
-                <li>En una sartén con aceite de oliva no muy caliente, agregar el ajo. Dorar un poquito sin que se
-                    queme.</li>
-                <li>Agregar el brócoli, sal y dejar cocinar hasta que esté tierno.</li>
-                <li>Si te gusta el brócoli, más tierno, agrégale aproximadamente 1/2 vaso de agua y cocinar bien
-                    tapando. Si no, lo cocinan sin agua. Queda una textura muy rica pero un poco más firme.</li>
-                <li>Agregar 150 g de queso crema finlandia sin sellos. Derretir y mezclar. Podes ayudar agregando agua
-                    de cocción para emulsionar. En este punto algunos arbolitos se van a desarmar bastante. Por último
-                    agregar pimienta. Y si queres, podrías agregar nuez moscada.</li>
-                <li>Emplatar y terminar con unos 50 g de almendras picadas. Las almendras si las horneas 10 minutitos a
-                    180 grados con un toque de oliva, sal y algún condimento tipo cúrcuma o curry, le va a dar su toque.
-                </li>
-            </ul></center>
-        </section><br><br>
+        <section id="PastaBrocoli">
+            <h2 class="recetas">Pasta con salsa de brócoli</h2>
+            <section id="receta">
+                <div class="ingredientes">
+                    <ul>
+                        <li><b>INGREDIENTES</b></li><br>
+                        <li>250 g de pasta seca corta (tipo penne rigate, tirabuzón, moñito, mostachol)</li>
+                        <li>1 brócoli en arbolitos chicos (no tirar los tronquitos, los guardo para hacer sopa. O lo
+                            podes
+                            usar
+                            para esto pero córtalo buen chiquito)</li>
+                        <li>1 diente de ajo (picado finito)</li>
+                        <li>aceite de oliva, sal y pimienta c/n</li>
+                        <li>50 g de queso crema finlandia sin sellos.</li>
+                        <li>50g de almendras</li>
+                    </ul>
+                </div>
+                <div class="preparacion">
+                    <ul>
+                        <li><b>PREPARACIÓN</b></li><br>
+                        <li>Cocinar 250 g de pasta seca corta (tipo penne rigate, tirabuzón, moñito, mostachol) en
+                            abundante
+                            agua hirviendo con sal según los minutos que indique el paquete. Yo suelo hervirlos 1 minuto
+                            menos
+                            para después terminar cocción mezclando con la salsa.</li><br>
+                        <li>Cortar 1 brócoli en arbolitos chicos (no tirar los tronquitos, los guardo para hacer sopa. O
+                            lo
+                            podes usar para esto pero córtalo bien chiquito). Picar finamente 1 diente de ajo</li><br>
+                        <li>En una sartén con aceite de oliva no muy caliente, agregar el ajo. Dorar un poquito sin que
+                            se
+                            queme.</li><br>
+                        <li>Agregar el brócoli, sal y dejar cocinar hasta que esté tierno.</li><br>
+                        <li>Si te gusta el brócoli, más tierno, agrégale aproximadamente 1/2 vaso de agua y cocinar bien
+                            tapando. Si no, lo cocinan sin agua. Queda una textura muy rica pero un poco más firme.</li><br>
+                        <li>Agregar 150 g de queso crema finlandia sin sellos. Derretir y mezclar. Podes ayudar
+                            agregando
+                            agua
+                            de cocción para emulsionar. En este punto algunos arbolitos se van a desarmar bastante. Por
+                            último
+                            agregar pimienta. Y si queres, podrías agregar nuez moscada.</li><br>
+                        <li>Emplatar y terminar con unos 50 g de almendras picadas. Las almendras si las horneas 10
+                            minutitos a
+                            180 grados con un toque de oliva, sal y algún condimento tipo cúrcuma o curry, le va a dar
+                            su
+                            toque.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
 
-        <section>
+        <section id="SopaChoclo">
             <center>
-                <h2 class="recetas" id="SopaChoclo">Sopa de choclo</h2>
-            <br>
-            <p>INGREDIENTES:</p>
-            <ul>
-                <li>1 cebolla</li>
-                <li>1 bolsa de choclo congelado o 3 choclos frescos desgranados</li>
-                <li>1 taza de leche</li>
-                <li>aceite de oliva, sal y pimienta c/n</li>
-                <li>opcionales para servir: parmesano, croutones, salsa picante, ciboulette, bochita de queso crema
-            </ul>
-            <p>PREPARACIÓN:</p>
-            <ul>
-                <li>Picar la cebolla y rehogarla con oliva</li>
-                <li>Agregar 1 bolsa de choclo congelado o 3 choclos frescos desgranados, 1 taza de leche, sal y pimienta
-                    a gusto si la quiero bien simple. Si no agregar también pimentón dulce, comino, curry y 1 nuez
-                    moscada. Cocinar hasta que los granos estén bien tiernos</li>
-                <li>Sacar del fuego, agregar mas leche para mixear. La cantidad de leche dependiendo la consistencia que
-                    le quieran dar</li>
-                <li>Pasar por un chino o colador finito de alambre. Volver a calentar</li>
-                <li>Servir con un crocante de parmesano, croutones, salsa picante, ciboulette, bochita de queso crema o
-                    cómo más les guste</li>
-                <li>Para el crocante de parmesano simplemente poner queso rallado en una sartén sin nada más. Cuando se
-                    dore sacar y dejar enfriar. No hace falta dar vuelta.</li>
-            </ul></center>
-        </section><br><br>
+                <h2 class="recetas">Sopa de choclo</h2>
+            </center>
+            <section id="receta">
+                <div class="ingredientes">
+                    <ul>
+                        <li><b>INGREDIENTES</b></li><br>
+                        <li>1 cebolla</li>
+                        <li>1 bolsa de choclo congelado o 3 choclos frescos desgranados</li>
+                        <li>1 taza de leche</li>
+                        <li>aceite de oliva, sal y pimienta c/n</li>
+                        <li>opcionales para servir: parmesano, croutones, salsa picante, ciboulette, bochita de queso
+                            crema
+                    </ul>
+                </div>
+                <div class="preparacion">
+                    <ul>
+                        <li><b>PREPARACIÓN</b></li><br>
+                        <li>Picar la cebolla y rehogarla con oliva</li><br>
+                        <li>Agregar 1 bolsa de choclo congelado o 3 choclos frescos desgranados, 1 taza de leche, sal y
+                            pimienta
+                            a gusto si la quiero bien simple. Si no agregar también pimentón dulce, comino, curry y 1
+                            nuez
+                            moscada. Cocinar hasta que los granos estén bien tiernos</li><br>
+                        <li>Sacar del fuego, agregar mas leche para mixear. La cantidad de leche dependiendo la
+                            consistencia
+                            que
+                            le quieran dar</li><br>
+                        <li>Pasar por un chino o colador finito de alambre. Volver a calentar</li><br>
+                        <li>Servir con un crocante de parmesano, croutones, salsa picante, ciboulette, bochita de queso
+                            crema o
+                            cómo más les guste</li><br>
+                        <li>Para el crocante de parmesano simplemente poner queso rallado en una sartén sin nada más.
+                            Cuando
+                            se
+                            dore sacar y dejar enfriar. No hace falta dar vuelta.</li>
+                    </ul>
+                </div>
 
-        <section>
-            <center>
-                <h2 class="recetas" id="Tortipizza">Tortipizza</h2>
-            <br>
-            <p>INGREDIENTES:</p>
-            <ul>
-                <li>2 cebollas</li>
-                <li>2 papas</li>
-                <li>250g cherrys</li>
-                <li>aceite de oliva, azúcar, sal y pimienta y oréganoc/n</li>
-                <li>120g de muzzarela rallada</li>
-                <li>2 dientes de ajo</li>
-            </ul>
-            <p>PREPARACIÓN:</p>
-            <ul>
-                <li>rallar 2 papas, picar la cebolla, condimentar con oliva, sal y pimienta. Mezclar todo en un bowl
-                </li>
-                <li>poner aceite en una placa con papel antiadherente y aplastar el relleno</li>
-                <li>En una fuente para horno poner los cherrys, el ajo machado y condimentar con oliva sal y pimienta.
-                </li>
-                <li>Agregar 1 cada de azúcar y una ramita de oregano.</li>
-                <li>Llevar todo 20 min al horno a 220º</li>
-                <li>Agregar la muzzarela y los tomates cherrys por encima</li>
-            </ul></center>
-        </section><br><br>
+
+            </section>
+
+            <section id="Tortipizza">
+                <center>
+                    <h2 class="recetas">Tortipizza</h2>
+                </center>
+                <section id="receta">
+                    <div class="ingredientes">
+                        <ul>
+                            <li><b>INGREDIENTES</b></li><br>
+                            <li>2 cebollas</li>
+                            <li>2 papas</li>
+                            <li>250g cherrys</li>
+                            <li>aceite de oliva, azúcar, sal y pimienta y oréganoc/n</li>
+                            <li>120g de muzzarela rallada</li>
+                            <li>2 dientes de ajo</li>
+                        </ul>
+                    </div>
+                    <div class="preparacion">
+                        <ul>
+                            <li><b>PREPARACIÓN</b></li><br>
+                            <li>rallar 2 papas, picar la cebolla, condimentar con oliva, sal y pimienta. Mezclar todo en
+                                un bowl
+                            </li><br>
+                            <li>poner aceite en una placa con papel antiadherente y aplastar el relleno</li><br>
+                            <li>En una fuente para horno poner los cherrys, el ajo machado y condimentar con oliva sal y
+                                pimienta.
+                            </li><br>
+                            <li>Agregar 1 cada de azúcar y una ramita de oregano.</li><br>
+                            <li>Llevar todo 20 min al horno a 220º</li><br>
+                            <li>Agregar la muzzarela y los tomates cherrys por encima</li><br>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="pie" id="idpie">
+                    <div>
+                        <ul>
+                            <li><a href="https://www.instagram.com/alexafuelednaturally"><i
+                                        class="bi bi-instagram"></i></a>
+                            </li>
+                            <li><a href="https://www.tiktok.com/@alexafuelednaturally"><i class="bi bi-tiktok"></i></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/@alexafuelednaturally1330"><i
+                                        class="bi bi-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="piecopy">
+                        <p>info@alexafuelednaturally.com</p>
+                        <p>© Alexa Fueled Naturally - Todos los derechos reservados.</p>
+                    </div>
+                </section>
+
 
 
     </main>
 
     <footer>
-        <h2 id="Redes">Redes</h2>
-        <a href="https://www.instagram.com/alexafuelednaturally">Instagram AFN</a><br>
-        <a href="https://www.tiktok.com/@alexafuelednaturally">TikTok AFN</a><br>
-        <a href="https://www.youtube.com/@alexafuelednaturally1330">Youtube AFN</a>
     </footer>
+
+    <script src="scripts/app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 </body>
 
