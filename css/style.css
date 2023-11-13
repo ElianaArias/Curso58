@@ -91,6 +91,9 @@ h2{
     font-style: oblique;
     font-weight: bold;
 }
+.recetas {
+    color: rgb(114, 0, 0);
+}
 
 h3 {
     font-style: oblique;
@@ -328,6 +331,16 @@ hr{
 }
 #PastaBrocoli {
     background-image: url(/images/pastasbrocoli.png);
+    background-size: 100%;
+    padding-bottom: 2%;
+}
+#SopaChoclo {
+    background-image: url(/images/sopachoclo.png);
+    background-size: 100%;
+    padding-bottom: 2%;
+}
+#Tortipizza {
+    background-image: url(/images/tortipizza.png);
     background-size: 100%;
     padding-bottom: 2%;
 }
