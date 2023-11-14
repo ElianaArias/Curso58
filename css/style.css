@@ -95,6 +95,27 @@ h2{
     color: rgb(114, 0, 0);
 }
 
+#arriba{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #d4bfff;
+    background-color:  #9c57b1;
+    position: fixed;
+    left: 85%;
+    bottom: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: scale(0);
+}
+#arriba:hover{
+    opacity: .70;
+    transform: scale(1.1);
+}
+.bi bi-arrow-up-circle{
+    font-size: 15px;
+}
+
 h3 {
     font-style: oblique;
     color: #706b6b;
@@ -368,4 +389,8 @@ hr{
     margin-left: 10px;
     margin-right: 25px;
     border-radius: 3%;
+}
+#musica a {
+    background-color: lightpink;
+    font-size: 40px;
 }
