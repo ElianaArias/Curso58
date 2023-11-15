@@ -95,16 +95,22 @@ h2 {
 h3 {
     font-style: oblique;
     color: #706b6b;
+    font-size: large;
+}
+h4 {
+    font-style: oblique;
+    color: #706b6b;
+    font-size: xx-large;
 }
 
 .recetas {
-    color: rgb(121, 23, 64);
+    color: #4a3428;
 }
 
 iframe {
     padding: 20px;
 }
-/*---------------------------------redes*/
+/*---------------------------------pie redes*/
 #idpie {
     display: flex;
     justify-content: center;
@@ -112,9 +118,11 @@ iframe {
     flex-direction: row;
 }
 
-.pie p {
-    color: rgb(177, 174, 174);
+.piecopy p {
+    padding: 0%;
+    color: rgb(136, 132, 132);
     text-align: right;
+    margin-bottom: 2px;
 }
 
 .pie ul {
@@ -144,100 +152,6 @@ iframe {
     background-color: rgb(190, 187, 187);
     transform: translateY(-10px);
     transition: all 0.3s;
-}
-/*-------------------------------------------media------*/
-@media(max-width:991px) {
-    .content {
-        min-height: 70px;
-    }
-
-    .menu {
-        top: 0;
-        padding: 20px;
-    }
-
-    .menu label {
-        display: initial;
-    }
-
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: linear-gradient(98deg,
-                rgba(167, 92, 69, 255)0%,
-                rgb(160, 93, 72)70%);
-        display: none;
-        ~
-    }
-
-    .menu .navbar ul li {
-        width: 100%;
-    }
-
-    #menu:checked~.navbar {
-        display: initial;
-    }
-
-    .pie {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .piecopy {
-        width: 400px;
-    }
-}
-
-@media (min-width:600px) {}
-
-@media (min-width: 768px) {
-    .pie {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-start;
-        margin-top: 30px;
-    }
-
-    .piecopy {
-        margin-left: 80px;
-    }
-
-    #arriba {
-        margin-left: 7%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .piecopy {
-        width: 500px;
-    }
-
-    .footer {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-
-    .footer hr {
-        display: none;
-    }
-
-    .footer_logo p {
-        width: 250px;
-    }
-
-    .caja_footer_img {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .footer_img button {
-        margin-top: 15px;
-    }
 }
 /*------------------------------------------------portada imagenes*/
 .flex-container {
@@ -388,6 +302,73 @@ hr {
     margin-right: 25px;
     border-radius: 3%;
 }
+/*------------------------------------------contactanos------*/
+.contactot h4, p {
+    padding: 20px 15px 5px 15px;
+    color:#706b6b;
+}
+
+.contactanos ul {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 15px;
+    list-style: none;
+}
+.contactanos li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    color: lightcoral;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.contactanos li a:hover{
+    background-color: #d63e3e;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+}
+/*------------------------------------------formulario de contacto---*/
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form input{
+    margin-top: 15px;
+    border: 1px solid #c7bab0;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 15px;
+}
+.form textarea{
+    width: 250px;
+    margin-top: 15px;
+    border: 1px solid #c7bab0;
+    border-radius: 20px;
+    padding: 15px;
+}
+.form .input_button{
+    background-color: whitesmoke;
+    color: #a05d48;
+    width: 150px;
+    transition: all 0.3s;
+}
+.form .input_button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+    background-color: #c7bab0;
+    box-shadow: 0px 0px 10px 0 rgb(160,93,72);
+}
+
 /*-------------------------------------------boton arriba----*/
 #arriba {
     width: 50px;
@@ -395,22 +376,177 @@ hr {
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255);
     background-color: rgb(243, 191, 187);
-    position: relative;
+    position: fixed;
     left: 85%;
-    bottom: 50px;
+    bottom: 40px;
     cursor: pointer;
     transition: all 0.3s ease;
     transform: scale(0.8);
 }
 
 #arriba:hover {
-    opacity: .60;
+    opacity: .70;
     transform: scale(1.1);
 }
 
-.bi-chevron-up {
-    font-size: 30px;
-    color: whitesmoke;
+.bi-chevron-double-up {
+    font-size: 15px;
+}
+
+/*-------------------------------------------media------*/
+@media(min-width: 480px){
+    .contactanos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactot{
+        width: 400px;
+    }
+}
+
+
+@media (min-width:600px) {}
+
+@media (min-width: 768px) {
+    .contactanos{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .contactot{
+        margin-left: 80px;
+    }
+    .contactot p{
+        font-size: 22px;
+    }
+    #arriba{
+        margin-left: 7%;
+    }
+    .pie {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+    .piecopy {
+        margin-left: 80px;
+    }
+}
+
+@media(max-width:991px) {
+    .content {
+        min-height: 70px;
+    }
+
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: linear-gradient(98deg,
+                rgba(167, 92, 69, 255)0%,
+                rgb(160, 93, 72)70%);
+        display: none;
+        ~
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .pie {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .piecopy {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contactot{
+        width: 500px;
+    }
+    .form input{
+        width: 320px;
+        height: 60px;
+    }
+    .form textarea{
+        width: 320px;
+        height: 120px;
+    }
+
+    .piecopy {
+        width: 500px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .contactot{
+        width: 500px;
+    }
+    .form input{
+        width: 320px;
+        height: 60px;
+    }
+    .form textarea{
+        width: 320px;
+        height: 120px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .footer hr {
+        display: none;
+    }
+
+    .footer_logo p {
+        width: 250px;
+    }
+
+    .caja_footer_img {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer_img button {
+        margin-top: 15px;
+    }
+}
+@media(min-width: 1200px){
+    .form input{
+        width: 320px;
+        height: 60px;
+    }
+    .form  textarea{
+        width: 320px;
+        height: 120px;
+    }
 }
 
 /*---ME FALTA AGREGAR MEDIA WUERY PARA EL BOTON ARRIBA, A VER SI ARRANCA!!!!!!!!!!!---*/
