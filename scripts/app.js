@@ -7,15 +7,12 @@ const arriba = document.getElementById("arriba")
 // Agrega un "escuchador de eventos" que espera a que hagas clic en el botón.
 arriba.addEventListener("click", () => {
     // Hace que la ventana (nuestra pág) se desplace a la posición vertical 0, nos lleva al inicio de la página.
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+    window.scrollTo(0, 0);
 });
 
 
 // Busca nuevamente el elemento con el ID "arriba" y lo almacena en la variable "buttonUp".
-const buttonUp = document.getElementById("arriba");
+constbuttonUp = document.getElementById("arriba");
 
 
 // Agrega una función que se ejecuta cada vez que ocurre un desplazamiento (scroll) en la página.
