@@ -11,6 +11,7 @@ body {
     background-color: rgba(237, 228, 221, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 /*----------------------------------------------menu nav-----------------------*/
 .container {
     max-width: 1200px;
@@ -72,6 +73,7 @@ body {
     cursor: pointer;
     display: ;
 }
+
 /*-------------------------------------------formato titulos----*/
 h1 {
     margin-top: 5%;
@@ -98,6 +100,7 @@ h3 {
     color: #706b6b;
     font-size: large;
 }
+
 h4 {
     font-style: oblique;
     color: #706b6b;
@@ -111,6 +114,7 @@ h4 {
 iframe {
     padding: 20px;
 }
+
 /*---------------------------------pie redes*/
 #idpie {
     display: flex;
@@ -154,6 +158,7 @@ iframe {
     transform: translateY(-10px);
     transition: all 0.3s;
 }
+
 /*------------------------------------------------portada imagenes*/
 .flex-container {
     display: flex;
@@ -171,6 +176,7 @@ iframe {
 hr {
     border: 0.5px solid rgb(243, 243, 229);
 }
+
 /*------------------------------------------------sobre mi----------*/
 #section1 {
     display: flex;
@@ -194,6 +200,7 @@ hr {
     background-color: whitesmoke;
     border-radius: 2%;
 }
+
 /*---------------------------------------------cajitas menu recetas--------------*/
 .content-container {
     padding: 0px;
@@ -235,6 +242,7 @@ hr {
     background-color: #c8937b;
 
 }
+
 /*----------------------------------------------------desarrollo de recetas-----*/
 #receta {
     display: flex;
@@ -303,10 +311,11 @@ hr {
     margin-right: 25px;
     border-radius: 3%;
 }
+
 /*------------------------------------------contactanos------*/
-.contactot h4, p {
+.contactot h4,p {
     padding: 20px 15px 5px 15px;
-    color:#706b6b;
+    color: #706b6b;
 }
 
 .contactanos ul {
@@ -318,7 +327,8 @@ hr {
     margin: 15px;
     list-style: none;
 }
-.contactanos li a{
+
+.contactanos li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,19 +340,22 @@ hr {
     border-radius: 50%;
     transition: all 0.3s;
 }
-.contactanos li a:hover{
+
+.contactanos li a:hover {
     background-color: #d63e3e;
     transform: translateY(-10px);
     transition: all 0.3s;
 }
+
 /*------------------------------------------formulario de contacto---*/
-.form{
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.form input{
+
+.form input {
     margin-top: 15px;
     border: 1px solid #c7bab0;
     width: 250px;
@@ -350,24 +363,27 @@ hr {
     border-radius: 20px;
     padding: 15px;
 }
-.form textarea{
+
+.form textarea {
     width: 250px;
     margin-top: 15px;
     border: 1px solid #c7bab0;
     border-radius: 20px;
     padding: 15px;
 }
-.form .input_button{
+
+.form .input_button {
     background-color: whitesmoke;
     color: #a05d48;
     width: 150px;
     transition: all 0.3s;
 }
-.form .input_button:hover{
+
+.form .input_button:hover {
     transform: scale(1.1);
     transition: all 0.3s;
     background-color: #c7bab0;
-    box-shadow: 0px 0px 10px 0 rgb(160,93,72);
+    box-shadow: 0px 0px 10px 0 rgb(160, 93, 72);
 }
 
 /*-------------------------------------------boton arriba----*/
@@ -395,43 +411,95 @@ hr {
 }
 
 /*-------------------------------------------media------*/
-@media(min-width: 480px){
-    .contactanos{
+@media(max-width: 480px) {
+    .content-container {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
-    .contactot{
+
+    #receta {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .preparacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;+
+        width: fit-content;
+        border-radius: 3%;
+    }
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5%;
+    }
+      
+    #section1 img {
+        border-radius: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #section1 p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: rgb(129, 126, 126);
+        background-color: whitesmoke;
+        border-radius: 2%;
+    }
+}
+
+@media(min-width: 480px) {
+    .contactanos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactot {
         width: 400px;
     }
 }
 
-
 @media (min-width:600px) {}
 
 @media (min-width: 768px) {
-    .contactanos{
+    .contactanos {
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-start;
         margin-top: 30px;
     }
-    .contactot{
+
+    .contactot {
         margin-left: 80px;
     }
-    .contactot p{
+
+    .contactot p {
         font-size: 22px;
     }
-    #arriba{
+
+    #arriba {
         margin-left: 7%;
     }
+
     .pie {
         display: flex;
         flex-direction: row-reverse;
         align-items: flex-start;
         margin-top: 30px;
     }
+
     .piecopy {
         margin-left: 80px;
     }
@@ -484,14 +552,16 @@ hr {
 }
 
 @media (min-width: 1024px) {
-    .contactot{
+    .contactot {
         width: 500px;
     }
-    .form input{
+
+    .form input {
         width: 320px;
         height: 60px;
     }
-    .form textarea{
+
+    .form textarea {
         width: 320px;
         height: 120px;
     }
@@ -505,18 +575,22 @@ hr {
         justify-content: space-around;
         flex-direction: row;
     }
-    .contactot{
+
+    .contactot {
         width: 500px;
     }
-    .form input{
+
+    .form input {
         width: 320px;
         height: 60px;
     }
-    .form textarea{
+
+    .form textarea {
         width: 320px;
         height: 120px;
     }
-    .footer{
+
+    .footer {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
@@ -538,13 +612,16 @@ hr {
     .footer_img button {
         margin-top: 15px;
     }
+
 }
-@media(min-width: 1200px){
-    .form input{
+
+@media(min-width: 1200px) {
+    .form input {
         width: 320px;
         height: 60px;
     }
-    .form  textarea{
+
+    .form textarea {
         width: 320px;
         height: 120px;
     }
