@@ -185,21 +185,7 @@ hr {
     margin-top: 5%;
 }
 
-#section1 img {
-    border-radius: 2%;
-    margin-left: 20%;
-    margin-right: 5%;
-}
 
-#section1 p {
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 5%;
-    text-align: justify;
-    color: rgb(129, 126, 126);
-    background-color: whitesmoke;
-    border-radius: 2%;
-}
 
 /*---------------------------------------------cajitas menu recetas--------------*/
 .content-container {
@@ -434,28 +420,6 @@ hr {
         width: fit-content;
         border-radius: 3%;
     }
-    #section1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 5%;
-    }
-      
-    #section1 img {
-        border-radius: 2%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    #section1 p {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        color: rgb(129, 126, 126);
-        background-color: whitesmoke;
-        border-radius: 2%;
-    }
 }
 
 @media(min-width: 480px) {
@@ -469,6 +433,17 @@ hr {
     .contactot {
         width: 400px;
     }
+    #section1 {
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #section1 p{
+        background-color: whitesmoke;
+        width: 400px;
+    }
+ 
 }
 
 @media (min-width:600px) {}
@@ -501,6 +476,16 @@ hr {
     }
 
     .piecopy {
+        margin-left: 80px;
+    }
+    #section1 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: cflex-start;
+        margin-top: 30px;
+    }
+    #section1 p{
+        background-color: whitesmoke;
         margin-left: 80px;
     }
 }
