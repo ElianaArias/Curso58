@@ -244,37 +244,37 @@ hr {
 }
 
 #Panqueques {
-    background-image: url(/images/panqueques.png);
+    background-image: url(../images/panqueques.png);
     background-size: 100%;
     padding-bottom: 2%;
 }
 
 #ÑoquisCalabaza {
-    background-image: url(/images/ñoquiscalabaza.png);
+    background-image: url(../images/ñoquiscalabaza.png);
     background-size: 100%;
     padding-bottom: 2%;
 }
 
 #ÑoquisEspinaca {
-    background-image: url(/images/ñoquisespinaca.png);
+    background-image: url(../images/ñoquisespinaca.png);
     background-size: 100%;
     padding-bottom: 2%;
 }
 
 #PastaBrocoli {
-    background-image: url(/images/pastasbrocoli.png);
+    background-image: url(../images/pastasbrocoli.png);
     background-size: 100%;
     padding-bottom: 2%;
 }
 
 #SopaChoclo {
-    background-image: url(/images/sopachoclo.png);
+    background-image: url(../images/sopachoclo.png);
     background-size: 100%;
     padding-bottom: 2%;
 }
 
 #Tortipizza {
-    background-image: url(/images/tortipizza.png);
+    background-image: url(../images/tortipizza.png);
     background-size: 100%;
     padding-bottom: 2%;
 }
